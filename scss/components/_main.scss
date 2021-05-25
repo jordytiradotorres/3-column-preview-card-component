@@ -1,0 +1,96 @@
+.model * + * {
+  margin-top: 1.8rem;
+}
+
+.model {
+  padding: 3rem;
+
+  img {
+    width: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-family: $fontBigShoulderDisplay;
+  }
+
+  p {
+    color: $transparentWhite;
+    line-height: 1.6;
+    font-size: 1.1rem;
+
+    @include mq(large) {
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.car {
+  max-width: 900px;
+  color: $veryLightGray;
+  padding: 3rem 0;
+
+  @include mq(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__sedans {
+    background-color: $brightOrangeColor;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    @include mq(large) {
+      border-radius: 0;
+    }
+
+    button {
+      color: $brightOrangeColor;
+
+      &:hover {
+        @include hoverButton($brightOrangeColor);
+      }
+    }
+  }
+
+  &__suvs {
+    background-color: $darkCyanColor;
+
+    button {
+      color: $darkCyanColor;
+
+      &:hover {
+        @include hoverButton($darkCyanColor);
+      }
+    }
+  }
+
+  &__luxury {
+    background-color: $veryDarkCyanColor;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    @include mq(large) {
+      border-radius: 0;
+    }
+
+    button {
+      color: $veryDarkCyanColor;
+
+      &:hover {
+        @include hoverButton($veryDarkCyanColor);
+      }
+    }
+  }
+}

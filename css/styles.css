@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: sans-serif; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0; }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none; }
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  @media (min-width: 768px) {
+    body {
+      width: 80%; } }
+
+.attribution {
+  text-align: center;
+  margin-bottom: 0.5rem; }
+  @media (min-width: 1024px) {
+    .attribution {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.8rem; } }
+
+.model * + * {
+  margin-top: 1.8rem; }
+
+.model {
+  padding: 3rem; }
+  .model img {
+    width: 4rem; }
+  .model h3 {
+    font-size: 3rem;
+    font-family: "Big Shoulders Display", cursive; }
+  .model p {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+    font-size: 1.1rem; }
+    @media (min-width: 1024px) {
+      .model p {
+        font-size: 1rem; } }
+  .model button {
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bold; }
+
+.car {
+  max-width: 900px;
+  color: #f2f2f2;
+  padding: 3rem 0; }
+  @media (min-width: 1024px) {
+    .car {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
+  .car__sedans {
+    background-color: #e38826;
+    border-radius: 0.5rem 0.5rem 0 0; }
+    @media (min-width: 1024px) {
+      .car__sedans {
+        border-radius: 0; } }
+    .car__sedans button {
+      color: #e38826; }
+      .car__sedans button:hover {
+        background-color: #e38826;
+        color: rgba(255, 255, 255, 0.75);
+        border: 3px solid rgba(255, 255, 255, 0.75); }
+  .car__suvs {
+    background-color: #006970; }
+    .car__suvs button {
+      color: #006970; }
+      .car__suvs button:hover {
+        background-color: #006970;
+        color: rgba(255, 255, 255, 0.75);
+        border: 3px solid rgba(255, 255, 255, 0.75); }
+  .car__luxury {
+    background-color: #004241;
+    border-radius: 0 0 0.5rem 0.5rem; }
+    @media (min-width: 1024px) {
+      .car__luxury {
+        border-radius: 0; } }
+    .car__luxury button {
+      color: #004241; }
+      .car__luxury button:hover {
+        background-color: #004241;
+        color: rgba(255, 255, 255, 0.75);
+        border: 3px solid rgba(255, 255, 255, 0.75); }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,5 @@
+@mixin hoverButton($bg) {
+  background-color: $bg;
+  color: $transparentWhite;
+  border: 3px solid $transparentWhite;
+}
